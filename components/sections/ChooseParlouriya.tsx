@@ -6,7 +6,7 @@ import image from "../../public/cta-image-desktop.webp";
 
 const ChooseParlouriya = () => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center my-20">
       <div className="flex justify-center items-center bg-white p-8 shadow-2xl gap-20 rounded-4xl">
         <div className="pt-20 mx-10">
           <h2 className="text-4xl font-bold">

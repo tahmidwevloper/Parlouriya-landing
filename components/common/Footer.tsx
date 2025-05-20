@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#12153C] text-white py-10 px-6 md:px-16 rounded-t-3xl">
+    <footer className="bg-[#12153C] text-white py-10 px-6 md:px-16 rounded-t-3xl mx-72">
+      <div className="mb-6">
+        <h2 className="text-2xl font-bold text-white">mangomint</h2>
+      </div>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
         {/* Logo & Platform */}
         <div>
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-white">mangomint</h2>
-          </div>
-          <div>
+          <div className="p-4 rounded-2xl bg-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[0.5px] border border-white/10">
             <h3 className="text-sm font-medium text-pink-300 mb-2 uppercase">
               Platform
             </h3>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
         {/* Business Types */}
-        <div>
+        <div className="p-4 rounded-2xl bg-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[0.5px] border border-white/10">
           <h3 className="text-sm font-medium text-pink-300 mb-2 uppercase">
             Business Types
           </h3>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
 
         {/* Features */}
-        <div>
+        <div className="p-4 rounded-2xl bg-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[0.5px] border border-white/10">
           <h3 className="text-sm font-medium text-pink-300 mb-2 uppercase">
             Features
           </h3>
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         {/* Resources */}
-        <div>
+        <div className="p-4 rounded-2xl bg-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[0.5px] border border-white/10">
           <h3 className="text-sm font-medium text-pink-300 mb-2 uppercase">
             Resources
           </h3>
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
 
         {/* Follow Us */}
-        <div>
+        <div className="p-4 rounded-2xl bg-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[0.5px] border border-white/10">
           <h3 className="text-sm font-medium text-pink-300 mb-2 uppercase">
             Follow Us
           </h3>
