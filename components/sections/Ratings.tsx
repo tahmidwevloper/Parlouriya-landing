@@ -3,7 +3,7 @@ import React from "react";
 const Ratings = () => {
   return (
     <>
-      <div className="flex justify-center items-center gap-8">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
         <div className="relative flex items-center justify-between bg-white/5 p-10 rounded-xl overflow-hidden border border-white/10 backdrop-blur-md">
           {/* Text content */}
           <h2 className="text-2xl text-purple-950 md:text-4xl font-bold .text-white z-10">
@@ -28,7 +28,7 @@ const Ratings = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-8">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
         <div className="relative flex items-center justify-between bg-white/5 p-10 rounded-xl overflow-hidden border border-white/10 backdrop-blur-md">
           {/* Text content */}
           <h2 className="text-2xl text-purple-950 md:text-4xl font-bold .text-white z-10">
