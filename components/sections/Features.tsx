@@ -5,7 +5,7 @@ const Features = () => {
     <>
       <div className="text-center py-10">
         <h3 className="text-2xl font-semibold mb-6">
-          Explore Mangomint by{" "}
+          Explore Mangomint by &nbsp;
           <span className="bg-gradient-to-r from-purple-800 to-orange-800 bg-clip-text text-transparent">
             business type...
           </span>
@@ -32,7 +32,7 @@ const Features = () => {
 
       <div className="text-center py-10">
         <h3 className="text-2xl font-semibold mb-6">
-          ...or learn more about our
+          ...or learn more about our &nbsp;
           <span className="bg-gradient-to-r from-purple-800 to-orange-800 bg-clip-text text-transparent">
             features
           </span>

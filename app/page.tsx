@@ -1,3 +1,4 @@
+import ChooseParlouriya from "@/components/sections/ChooseParlouriya";
 import Features from "@/components/sections/Features";
 import Hero from "@/components/sections/Hero";
 import QuickOverview from "@/components/sections/QuickOverview";
@@ -12,6 +13,7 @@ export default function Home() {
       <Ratings />
       <Unique />
       <Features />
+      <ChooseParlouriya />
     </>
   );
 }
