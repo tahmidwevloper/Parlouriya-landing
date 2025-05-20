@@ -120,3 +120,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-animation-left {
+  animation: scrollLeft 80s linear infinite;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.scroll-animation-right {
+  animation: scrollRight 80s linear infinite;
+}
