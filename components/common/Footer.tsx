@@ -28,7 +28,7 @@ const Footer = () => {
           <h3 className="text-sm font-medium mb-2 uppercase bg-gradient-to-r from-purple-800 to-orange-300 bg-clip-text text-transparent">
             Business Types
           </h3>
-          <ul className="space-y-1 text-sm text-white/80 max-h-52 overflow-auto">
+          <ul className="space-y-1 text-sm text-white/80 max-h-52 .overflow-auto overflow-hidden">
             <li>Hair Salons</li>
             <li>Med Spas</li>
             <li>IV Therapy</li>
@@ -48,7 +48,7 @@ const Footer = () => {
           <h3 className="text-sm font-medium mb-2 uppercase bg-gradient-to-r from-purple-800 to-orange-300 bg-clip-text text-transparent">
             Features
           </h3>
-          <ul className="space-y-1 text-sm text-white/80 max-h-52 overflow-auto">
+          <ul className="space-y-1 text-sm text-white/80 max-h-52 overflow-hidden">
             <li>Calendar & Scheduling</li>
             <li>Payments & Point-of-Sale</li>
             <li>Online Booking</li>
