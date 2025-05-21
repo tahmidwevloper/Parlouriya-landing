@@ -3,10 +3,29 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [changeHeaderColor, setChangeHeaderColor] = useState(false);
+  const handleScrollingEffect = () => {
+    if (scrollY > 50) setChangeHeaderColor(true);
+    else setChangeHeaderColor(false);
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScrollingEffect);
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollingEffect);
+    };
+  }, [changeHeaderColor]);
+
   return (
-    <header className="w-full px-6 py-4 shadow-md flex items-center justify-between bg-white">
+    <header
+      className={`w-full fixed z-50 px-6 py-4 flex items-center justify-between ${
+        changeHeaderColor ? "bg-purple-100 shadow-md" : "bg-transparent"
+      }`}
+    >
       <div className="flex items-center gap-8">
         <Link href="/" className="text-xl font-bold">
           Logo
