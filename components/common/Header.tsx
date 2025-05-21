@@ -3,27 +3,16 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import useScrollingEffect from "@/app/Hooks/useScrollingEffect";
 
 const Header = () => {
-  const [changeHeaderColor, setChangeHeaderColor] = useState(false);
-  const handleScrollingEffect = () => {
-    if (scrollY > 50) setChangeHeaderColor(true);
-    else setChangeHeaderColor(false);
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", handleScrollingEffect);
-
-    return () => {
-      document.removeEventListener("scroll", handleScrollingEffect);
-    };
-  }, [changeHeaderColor]);
+  const scrollEffect = useScrollingEffect();
 
   return (
     <header
       className={`w-full fixed z-50 px-6 py-4 flex items-center justify-between ${
-        changeHeaderColor ? "bg-purple-100 shadow-md" : "bg-transparent"
+        scrollEffect ? "bg-purple-100 shadow-md" : "bg-transparent"
       }`}
     >
       <div className="flex items-center gap-8">
