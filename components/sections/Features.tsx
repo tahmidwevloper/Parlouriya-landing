@@ -2,7 +2,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <>
+    <div className="dark:bg-[#0E2148]">
       <div className="text-center py-10 px-4">
         <h3 className="text-2xl md:text-3xl font-semibold mb-6">
           Explore Mangomint by &nbsp;
@@ -56,7 +56,7 @@ const Features = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

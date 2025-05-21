@@ -7,13 +7,13 @@ import Unique from "@/components/sections/Unique";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-white dark:bg-[#0E2148]">
       <Hero />
       <QuickOverview />
-      <Ratings />
+      <Ratings /> {/**Problem for responsiveness */}
       <Unique />
       <Features />
       <ChooseParlouriya />
-    </>
+    </div>
   );
 }

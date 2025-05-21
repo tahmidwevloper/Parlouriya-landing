@@ -6,10 +6,10 @@ import image from "../../public/cta-image-desktop.webp";
 
 const ChooseParlouriya = () => {
   return (
-    <div className="flex justify-center items-center my-20 mx-5 md:mx-8 lg:mx-12 px-4 lg:px-16 xl:px-0 2xl:px-0">
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center bg-white p-6 md:p-3 lg:p-10 shadow-2xl gap-10 md:gap-8 .md:gap-14 .lg:gap-20 rounded-3xl w-full max-w-7xl">
+    <div className="flex justify-center items-center bg-white dark:bg-[#0E2148] my-20 mx-5 md:mx-8 lg:mx-12 px-4 lg:px-16 xl:px-0 2xl:px-0">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center bg-white dark:bg-pink-50 p-6 md:p-3 lg:p-10 shadow-2xl gap-10 md:gap-8 .md:gap-14 .lg:gap-20 rounded-3xl w-full max-w-7xl">
         <div className="w-full md:w-[60%] mx-5">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold md:pt-8 lg:">
+          <h2 className="text-[#0E2148] text-2xl md:text-3xl lg:text-4xl font-bold md:pt-8 lg:">
             Find out if Mangomint <br /> is right for you
           </h2>
 
