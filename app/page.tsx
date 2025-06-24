@@ -10,7 +10,7 @@ export default function Home() {
     <div className="bg-white dark:bg-[#0E2148]">
       <Hero />
       <QuickOverview />
-      <Ratings /> {/**Problem for responsiveness */}
+      <Ratings />
       <Unique />
       <Features />
       <ChooseParlouriya />

@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Menu, MoonStar, Sun } from "lucide-react";
 import useScrollingEffect from "@/app/Hooks/useScrollingEffect";
 import useModeToggler from "@/app/Hooks/useModeToggler";
-// import ThemeToggle from "@/theme/theme-toggle";
 
 const Header = () => {
   const scrollEffect = useScrollingEffect();
