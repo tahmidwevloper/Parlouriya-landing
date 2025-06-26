@@ -3,10 +3,18 @@
 import { useState, useEffect } from "react"
 import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import SectionHeader from "@/components/SharedComponent/SectionHeader/SectionHeader"
 
 
 const PricingTable = () => {
-  const [isHeaderSticky, setIsHeaderSticky] = useState(scrollY > 3000 ? true : false)
+  const [isHeaderSticky, setIsHeaderSticky] = useState(false)
+
+  const sectionHeaderData = {
+    sectionHeader: "No header",
+    sectionTitle: "Compare plans",
+    sectionDescription: "Want to talk to a human about our plans?Start a chat",
+    isCentered: true,
+  }
   
   const pricingData = {
         plans: [
@@ -301,21 +309,27 @@ const PricingTable = () => {
       useEffect(() => {
         const handleScroll = () => {
           const scrollTop = window.scrollY;
-          if (scrollTop > 1200) {
-            setIsHeaderSticky(true)
-          } else if (scrollTop > 3300){
+          const screenWidth = window.innerWidth;
+
+          if(screenWidth <768){
             setIsHeaderSticky(false)
+          }
+
+          if (scrollTop > 3680) {
+            setIsHeaderSticky(false)
+          } else if (scrollY > 1580 && screenWidth >= 768) {
+            setIsHeaderSticky(true)
           } else {
             setIsHeaderSticky(false);
           }
-      
         };
       
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-      }, []);
+      }, [window.scrollY]);
+
       
-    
+      
       // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any
       const renderFeatureValue = (value: any, planId: string) => {
         if (typeof value === "boolean") {
@@ -337,7 +351,9 @@ const PricingTable = () => {
       }
     
   return (
-    <div className="w-full max-w-6xl mx-auto p-4">
+    <div className="my-16">
+        <SectionHeader sectionHeaderData={sectionHeaderData} />
+        <div className="w-full max-w-6xl mx-auto p-4 pricing-table">
       <div className="overflow-hidden">
         <div
           className={`transition-all duration-300 bg-gradient-to-r from-purple-50 to-pink-50 border-b ${
@@ -398,6 +414,7 @@ const PricingTable = () => {
       <div className='flex items-center justify-center gap-4 mt-8'>
       <Button variant={"outline"} className='rounded-full text-pink-700 border border-pink-700 hover:bg-pink-700 hover:text-white px-9 py-7'>Book a demo</Button>
       <Button className='rounded-full text-white bg-pink-700 hover:bg-pink-800 px-9 py-7'>Try it now</Button>
+    </div>
     </div>
     </div>
   )
